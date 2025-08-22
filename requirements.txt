@@ -1,0 +1,44 @@
+# FastAPI and ASGI server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Database
+sqlalchemy==2.0.23
+alembic==1.12.1
+psycopg2-binary==2.9.9
+asyncpg==0.29.0  # For async PostgreSQL support
+
+# Authentication and Security
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.6
+passlib[bcrypt]==1.7.4
+
+# Data validation and serialization
+pydantic[email]==2.5.0
+pydantic-settings==2.1.0
+
+# HTTP requests (for external APIs if needed)
+httpx==0.25.2
+
+# Cache (optional but good to show)
+redis==5.0.1
+python-decouple==3.8  # For environment variables
+
+# Development and Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+httpx==0.25.2  # For testing FastAPI endpoints
+
+# Code quality
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+pre-commit==3.5.0
+
+# Documentation
+mkdocs==1.5.3
+mkdocs-material==9.4.8
+
+# Monitoring and Logging
+structlog==23.2.0
